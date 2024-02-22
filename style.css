@@ -932,8 +932,7 @@ body {
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
-.about-us .site-header {
-}
+
 
 .about-us .site-header figure {
     margin: 0;
@@ -1948,6 +1947,11 @@ body {
 }
 
 
+.teamMembers img{
+ width: 100%;
+ aspect-ratio:  auto / 1;
+ object-fit: contain;
+}
 
 
 
