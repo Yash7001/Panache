@@ -332,7 +332,7 @@ body {
 .content-section {
     min-height: 490px;
     width: 100%;
-    background: url("images/middle-cover.jpg") no-repeat;
+    background: url("images/middle-cover.jpg") ;
     background-size: 100% auto;
 }
 
