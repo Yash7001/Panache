@@ -1947,16 +1947,8 @@ body {
     content: "03.";
 }
 
-
 .teamMembers img{
  width: 100%;
  aspect-ratio:  auto / 1;
  object-fit: contain;
 }
-
-
-
-
-
-
-
