@@ -21,7 +21,7 @@ body {
 }
 
 .d-col-n {
-    position: fixed;
+    position: relative;
     width: 100%;
     min-height: 1px;
     padding-right: 15px;
@@ -40,13 +40,14 @@ body {
 }
 
 .site-header {
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: transparent; /* Set background color to transparent */
     padding-top: 5px;
-  }
-  
-  
+
+}
+
 .site-header figure {
     margin: 0;
     padding: 0;
@@ -85,7 +86,7 @@ body {
   Hamburger Menu
 ----------------------------------------*/
 .hamburger-menu {
-    position: fixed;
+    position: relative;
     width: 100%;
     max-width: 24px;
     height: 22px;
@@ -96,10 +97,10 @@ body {
 
 .hamburger-menu span {
     display: block;
-    position: fixed;
+    position: absolute;
     height: 2px;
     width: 100%;
-    background: #fff;
+    background: #000000;
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -140,25 +141,30 @@ body {
 }
 
 .site-navigation {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: -11px;
+    right: 15px;
+    z-index: 9999;
     width: 100%;
-    background-color: #fff; /* Adjust as needed */
-    z-index: 1000; /* Ensure it's above other content */
-    padding-top: 20px; /* Adjust as needed */
-  }
-  
+    height: 22px;
+    overflow: hidden;
+    list-style: none;
+    transition: all .35s;
+    color: hsl(0, 0%, 100%);
+}
 
 .site-navigation.show {
     height: auto;
 }
 
 .site-navigation ul {
+    position: fixed;
     top: 0;
     left: -320px;
     z-index: 9999;
     width: 320px;
     height: 100vh;
+    overflow-x: scroll;
     padding: 30px;
     margin: 0;
     background: #050505;
