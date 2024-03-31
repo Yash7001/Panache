@@ -42,7 +42,6 @@ body {
 .site-header {
     top: 0;
     width: 100%;
-    z-index: 1000;
     background-color: transparent; /* Set background color to transparent */
     padding-top: 5px;
   }
